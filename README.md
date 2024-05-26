@@ -34,3 +34,22 @@ use <label> to pass into drawImage use #include <out.h> (with the right name) in
 interrupt driven from a hall effect sensor, triggers the loops to draw and calcs an RPM then it goes into sleep after the effect is drawn, the hall effect can wake it up, but to save battery pressing the button wakes the cpu up again
 
 the slider switch needs to be be in the furthest away position from the programming pads, match the G to gnd on the programmer..
+
+
+
+==============================================================================
+
+
+calculate x/y
+
+30 is 360/nuber of leds around, which is speed dependant  so used the number of leds vertically
+
+  angle_radians = ( led_number * 30 *pi / 180  )
+
+  x_inner = radius * cos ( angle_radius )
+  y_inner = radius * cos ( angle_radius )
+
+distance...
+
+  distance = sqrt( (dx^2) + (dy^2))
+
