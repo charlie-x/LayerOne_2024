@@ -3,6 +3,8 @@ Repo for LayerOne 2024
 
 # L1 Pov Spinner
 
+![spinner_photo.png](docs/spinner_photo.png)
+
 ## What is the Pov Spinner?
 
 The Pov Spinner is an electronic fidget spinner that displays words and patterns via LED's when spinning. It was part of the LayerOne 2024 Conference badge.
@@ -20,7 +22,7 @@ The Pov Spinner is an electronic fidget spinner that displays words and patterns
 
 Clone the git repo or download the zip of the repo
 
-## git Clone
+## git clone
 ```
 git clone https://github.com/charlie-x/LayerOne_2024.git
 ```
@@ -30,6 +32,18 @@ git clone https://github.com/charlie-x/LayerOne_2024.git
 ```
 wget https://github.com/charlie-x/LayerOne_2024/archive/refs/heads/main.zip
 ```
+
+## Edit the code
+
+Open the **L12024POV.cproj** project file.
+
+The text and animation code is located in **main.c**.
+
+![microchip_studio.png](docs/microchip_studio.png)
+
+Once the desired changes are complete, run the **build**. This will output the build files into the **Debug** folder.  
+
+The **L12024POV.hex** file created is what will be used to flash the spinner.
 
 ## AVR programing device
 
@@ -107,6 +121,12 @@ Install the **libusbK** driver
 
 ![zadig_libusbK.png](docs/zadig_libusbK.png)
 
+
+## Spinner Pinouts for programming
+
+The device has the Ground pin labeld as **G**. 
+
+![pinouts.png](docs/pinouts.png)
 
 ## Notes on modifiying the code
 
