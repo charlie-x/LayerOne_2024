@@ -89,7 +89,6 @@ https://github.com/avrdudes/avrdude/releases
 
 ```avrdude -c usbasp -p t4313 -v -B 3 -U flash:w:..\LayerOne_2024-main\LayerOne_2024-main\L1_POVSpinner\L12024POV\Debug\L12024POV.hex```
 
-
 ### Windows - atprogram
 
 atprogram - is a program that comes with Microchip Studio
@@ -105,6 +104,9 @@ Zadig is a Windows application that installs generic USB drivers, such as WinUSB
 https://zadig.akeo.ie/#
 
 Install the **libusbK** driver
+
+![zadig_libusbK.png](docs/zadig_libusbK.png)
+
 
 ## Notes on modifiying the code
 
