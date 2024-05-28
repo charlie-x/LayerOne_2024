@@ -77,16 +77,9 @@ for avr-gcc's use the makefile
 
 ## Flashing the board
 
-### *nix - atprogram
+**NOTE: The kraken needs avrdude, it is not supported in microchip studio.**
 
-Use atprogram that comes with Microchip Studio
-
-```
-atprogram -cl 200khz -v -d attiny4313 -t atmelice -i isp chiperase
-atprogram -cl 200khz -v -d attiny4313 -t atmelice -i isp program -f L12024POV\Release\L12024POV.elf
-```
-
-### Windows - avrdude
+### *nix / Windows / Mac - avrdude
 
 AVRDUDE - is a program for downloading and uploading the on-chip memories of Microchip’s AVR microcontrollers.
 
@@ -95,6 +88,16 @@ Flash the board with the compiled **hex** file to device
 https://github.com/avrdudes/avrdude/releases
 
 ```avrdude -c usbasp -p t4313 -v -B 3 -U flash:w:..\LayerOne_2024-main\LayerOne_2024-main\L1_POVSpinner\L12024POV\Debug\L12024POV.hex```
+
+
+### Windows - atprogram
+
+atprogram - is a program that comes with Microchip Studio
+
+```
+atprogram -cl 200khz -v -d attiny4313 -t atmelice -i isp chiperase
+atprogram -cl 200khz -v -d attiny4313 -t atmelice -i isp program -f L12024POV\Release\L12024POV.elf
+```
 
 #### Device Drivers for Windows
 
