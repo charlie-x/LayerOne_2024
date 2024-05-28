@@ -101,7 +101,9 @@ Flash the board with the compiled **hex** file to device
 
 https://github.com/avrdudes/avrdude/releases
 
-```avrdude -c usbasp -p t4313 -v -B 3 -U flash:w:..\LayerOne_2024-main\LayerOne_2024-main\L1_POVSpinner\L12024POV\Debug\L12024POV.hex```
+```
+avrdude -c usbasp -p t4313 -v -B 3 -U flash:w:..\LayerOne_2024-main\LayerOne_2024-main\L1_POVSpinner\L12024POV\Debug\L12024POV.hex
+```
 
 ### Windows - atprogram
 
