@@ -14,7 +14,7 @@ INCLUDES = -Iimages
 CC = avr-gcc
 
 # Compiler Flags
-CFLAGS = -mmcu=$(MCU) -Os $(INCLUDES) -MMD
+CFLAGS = -mmcu=$(MCU) -Os $(INCLUDES) -MMD -ffunction-sections -Wl,--gc-sections
 
 # Linker Flags
 LDFLAGS = -lm
